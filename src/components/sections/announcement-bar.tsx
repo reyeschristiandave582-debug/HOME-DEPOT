@@ -9,25 +9,25 @@ interface NotificationItem {
 }
 
 const firstNames = [
-  "Marcus", "Chloe", "Ethan", "Savannah", "Lucas", "Maya", "Mason", "Zoey", "Benjamin", "Penelope",
-  "Logan", "Lillian", "Alexander", "Nora", "Jackson", "Riley", "Sebastian", "Zoey", "Jack", "Stella",
-  "Owen", "Aurora", "Theodore", "Ellie", "Julian", "Hannah", "Jayden", "Hazel", "Grayson", "Violet",
-  "Leo", "Aria", "Gabriel", "Lily", "Isaac", "Eleanor", "Oliver", "Claire", "Ezra", "Skylar",
-  "Charles", "Lucy", "Thomas", "Paisley", "Caleb", "Everly", "Josiah", "Anna", "Christian", "Caroline"
+  "Liam", "Olivia", "Noah", "Emma", "Oliver", "Charlotte", "Elijah", "Amelia", "James", "Sophia",
+  "William", "Isabella", "Benjamin", "Ava", "Lucas", "Mia", "Henry", "Evelyn", "Alexander", "Harper",
+  "Mason", "Luna", "Michael", "Camila", "Ethan", "Gianna", "Daniel", "Elizabeth", "Jacob", "Eleanor",
+  "Logan", "Ella", "Jackson", "Abigail", "Levi", "Sophia", "Sebastian", "Emily", "Mateo", "Avery",
+  "Jack", "Scarlett", "Owen", "Emma", "Theodore", "Mila", "Aiden", "Aria", "Samuel", "Penelope"
 ];
 
-const lastInitials = ["P.", "M.", "R.", "S.", "T.", "V.", "W.", "K.", "L.", "B.", "C.", "D.", "E.", "F.", "G.", "H."];
+const lastInitials = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "J.", "K.", "L.", "M.", "N.", "P.", "R.", "S.", "T.", "W."];
 
 const actions = [
-  "just claimed a $750 Target coupon!",
-  "just claimed a $750 Target gift card!",
+  "just claimed a $750 coupon!",
+  "just claimed a $750 gift card!",
   "just unlocked reward eligibility!",
   "just completed the review survey!",
   "just verified eligibility!"
 ];
 
 const notifications: NotificationItem[] = Array.from({ length: 100 }, (_, i) => ({
-  name: `${firstNames[i % firstNames.length]} ${lastInitials[(i * 3) % lastInitials.length]}`,
+  name: `${firstNames[i % firstNames.length]} ${lastInitials[(i * 7) % lastInitials.length]}`,
   action: actions[i % actions.length]
 }));
 
@@ -88,9 +88,9 @@ export default function AnnouncementBar() {
 
   return (
     <>
-      {/* Target Red Sticky Top Bar with iOS Notch & Status Bar Protection */}
+      {/* Sticky Top Bar with iOS Notch & Status Bar Protection */}
       <div 
-        className="sticky top-0 z-50 w-full bg-[#CC0000] border-b border-[#A00000] pb-2 px-3 sm:px-4 shadow-md backdrop-blur-md"
+        className="sticky top-0 z-50 w-full bg-[#f76404] border-b border-[#d45303] pb-2 px-3 sm:px-4 shadow-md backdrop-blur-md"
         style={{ paddingTop: "calc(env(safe-area-inset-top, 0px) + 14px)" }}
       >
         {/* Background Sparkle Accents */}
@@ -112,7 +112,7 @@ export default function AnnouncementBar() {
             <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white shrink-0 -mt-0.5" strokeWidth={2.5} />
             <p className="text-white text-[9.5px] xs:text-[10.5px] sm:text-[11.5px] font-bold tracking-tight leading-none flex items-center gap-1.5 flex-wrap justify-center">
               <span>Your spot is reserved for:</span>
-              <span className="inline-flex items-center gap-1 bg-[#8A0000] border border-white/20 text-white px-1.5 py-0.5 rounded font-mono text-[9px] xs:text-[10px] sm:text-[11px] font-bold shadow-sm">
+              <span className="inline-flex items-center gap-1 bg-[#c24a02] border border-white/20 text-white px-1.5 py-0.5 rounded font-mono text-[9px] xs:text-[10px] sm:text-[11px] font-bold shadow-sm">
                 <Clock className="w-2.5 h-2.5 text-white animate-pulse" />
                 <span>{mounted ? formatTime(timeLeft) : "05:00"}</span>
               </span>
@@ -147,8 +147,8 @@ export default function AnnouncementBar() {
               : "translate-y-3 opacity-0"
           }`}
         >
-          {/* Target Red Check Badge */}
-          <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#CC0000] text-white">
+          {/* Accent Check Badge */}
+          <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#f76404] text-white">
             <Check className="w-2.5 h-2.5" strokeWidth={3} />
           </div>
 
