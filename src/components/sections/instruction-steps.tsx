@@ -32,21 +32,21 @@ const steps: Step[] = [
   {
     number: 5,
     title: "Check your reward eligibility",
-    subtitle: "Receive your $750 Home Depot reward once verified",
+    subtitle: "Receive your reward once verified",
   },
 ];
 
 /**
- * InstructionSteps Component (Target Edition)
+ * InstructionSteps Component
  * 
- * Clean 5-step instructions card styled with Target Red accents (#CC0000), 
+ * Clean 5-step instructions card styled with accents (#f76404), 
  * dynamic numbered badges, and structured titles with subtext for high clarity.
  */
 export default function InstructionSteps() {
   return (
     <section className="relative w-full max-w-md mx-auto px-4 sm:px-5 mb-4 mt-3">
       {/* Steps Card Wrapper */}
-      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-3.5 sm:p-5 bg-white/90 backdrop-blur-md border border-[#CC0000]/20 shadow-xl overflow-hidden transition-all duration-300">
+      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-3.5 sm:p-5 bg-white/90 backdrop-blur-md border border-[#f76404]/20 shadow-xl overflow-hidden transition-all duration-300">
         {/* Decorative Background Texture */}
         <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
           <img
@@ -64,8 +64,8 @@ export default function InstructionSteps() {
               className="flex items-start gap-2.5 group/item animate-in fade-in slide-in-from-left duration-500 fill-mode-both"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              {/* Target Red Number Badge */}
-              <div className="relative flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full bg-[#CC0000] text-white font-bold text-[10px] sm:text-xs shadow-sm group-hover/item:scale-105 transition-transform duration-200 mt-0.5">
+              {/* Number Badge */}
+              <div className="relative flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full bg-[#f76404] text-white font-bold text-[10px] sm:text-xs shadow-sm group-hover/item:scale-105 transition-transform duration-200 mt-0.5">
                 {step.number}
               </div>
 
