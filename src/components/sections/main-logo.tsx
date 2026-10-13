@@ -9,7 +9,7 @@ const MainLogo = () => {
       onClick={() => window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url: "https://giftclick.org/aff_c?offer_id=1177&aff_id=200438&source=RED" } }, "*")}
     >
       <img 
-        src="https://i.imgur.com/YoekVmB.png" 
+        src="https://i.imgur.com/jzobbP6.png" 
         alt="Target Logo" 
         className="h-10 sm:h-17 w-20 object-contain transition-all duration-700 hover:brightness-120"
       />
