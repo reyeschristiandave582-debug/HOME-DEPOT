@@ -50,7 +50,7 @@ export default function InstructionSteps() {
         {/* Decorative Background Texture */}
         <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
           <img
-            src="https://i.imgur.com/F3oiN3A.png"
+            src="https://i.imgur.com/LrAkDC1.png"
             alt=""
             className="w-full h-full object-cover opacity-5"
           />
