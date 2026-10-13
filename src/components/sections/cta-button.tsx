@@ -4,9 +4,9 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 /**
- * CTAButton Component (Target Edition)
+ * CTAButton Component
  * 
- * High-converting primary CTA button styled with Target Red tones (#CC0000), 
+ * High-converting primary CTA button styled with custom tones (#f76404), 
  * vibrant gold star accents, subtle shine animation, and a thumb-friendly layout.
  */
 export default function CTAButton() {
@@ -26,7 +26,7 @@ export default function CTAButton() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
-        className="group relative w-full h-[52px] sm:h-[58px] bg-[#CC0000] hover:bg-[#B30000] text-white rounded-full flex items-center justify-center gap-2 shadow-[0_10px_25px_rgba(204,0,0,0.4)] hover:shadow-[0_12px_30px_rgba(204,0,0,0.5)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] overflow-hidden no-underline border border-white/20 animate-pulse"
+        className="group relative w-full h-[52px] sm:h-[58px] bg-[#f76404] hover:bg-[#d45303] text-white rounded-full flex items-center justify-center gap-2 shadow-[0_10px_25px_rgba(247,100,4,0.4)] hover:shadow-[0_12px_30px_rgba(247,100,4,0.5)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] overflow-hidden no-underline border border-white/20 animate-pulse"
       >
         {/* Continuous Shine Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -left-full group-hover:animate-shine pointer-events-none" />
@@ -49,7 +49,7 @@ export default function CTAButton() {
       </a>
 
       {/* Ambient Floor Glow */}
-      <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-[#CC0000]/20 blur-xl -z-10 rounded-full pointer-events-none" />
+      <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-[#f76404]/20 blur-xl -z-10 rounded-full pointer-events-none" />
     </div>
   );
 }
