@@ -32,7 +32,7 @@ const steps: Step[] = [
   {
     number: 5,
     title: "Check your reward eligibility",
-    subtitle: "Receive your $750 Target reward once verified",
+    subtitle: "Receive your $750 Home Depot reward once verified",
   },
 ];
 
